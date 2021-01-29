@@ -1,4 +1,4 @@
-# some-random-robot
+# SomeRandomRobot
 Discord bot, which i created for learning JavaScript.
 
 # How to run it?
