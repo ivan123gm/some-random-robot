@@ -1,6 +1,6 @@
 {
   "name": "some-random-robot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bot, which i created for learning JavaScript.",
   "main": "index.js",
   "scripts": {
