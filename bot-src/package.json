@@ -1,0 +1,23 @@
+{
+  "name": "some-random-robot",
+  "version": "1.0.0",
+  "description": "Bot, which i created for learning JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ivan123",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan123gm/some_random_robot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivan123gm/some_random_robot/issues"
+  },
+  "homepage": "https://github.com/ivan123gm/some_random_robot#readme"
+}
