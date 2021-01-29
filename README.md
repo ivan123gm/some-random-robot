@@ -8,3 +8,6 @@ Discord bot, which i created for learning JavaScript.
 4. Execute command "npm install discord.js"
 5. Replace "insert-your-token-here" with your Discord bot token
 6. Execute command "node ."
+
+# If you wanna to redistribute this bot, then upload your own version of my bot on Github and replace these lines in package.json file, please.
+![replace lines, which i highlighted in red.](/images/img1.png)
