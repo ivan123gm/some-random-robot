@@ -1,9 +1,9 @@
 # SomeRandomRobot
 Discord bot, which i created for learning JavaScript.
 
-Latest version of bot: 1.0.3
+Latest version of bot: 1.0.4
 
-Information about latest version: [here](https://github.com/ivan123gm/some-random-robot/commit/d880e37295684274e1538ddf3e2b12e035d6ac57)
+Latest new version change log: [here](https://github.com/ivan123gm/some-random-robot/commit/273266a21797d0069a7ed1af1f67e2b3803fc75c)
 # How to run it?
 1. Install node.js
 2. Clone this repo
