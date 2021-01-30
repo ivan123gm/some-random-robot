@@ -17,19 +17,22 @@ client.once('ready', () => {
     const args = message.content.slice(prefix.length).split(/ +/)
     const command = args.shift().toLowerCase()
     
-    if (command === 'ping')
-      {message.reply('pong!')}
+      if (command === "ping")
+        {message.reply('pong!')
+      }
     
-      else if (command === 'hello')
-        {message.reply('hello!')}
+      else if (command === "hello")
+        {message.reply('hello!')
+      }
 
-      else if (command === 'bruh')
-        {message.reply('bruh')}
+      else if (command === "bruh")
+        {message.reply('bruh')
+      }
         
-      else if (command === 'help')
-      {message.channel.send (`Prefix: "." \nCommands: ping, hello, bruh, help, serverinfo`)}
-
-      else if (command === 'serverinfo')
-      {message.channel.send (`Server name: ${message.guild.name}\nAmount of members: ${message.guild.memberCount}\nServer creation info: ${message.guild.createdAt}\nServer region: ${message.guild.region}`)
-    }
+      else if (command === "help")
+        {message.channel.send (`Prefix: "." \nCommands: ping, hello, bruh, help, serverinfo`)
+      }
+      else if (command === "serverinfo")
+        {message.channel.send (`Server name: ${message.guild.name}\nAmount of members: ${message.guild.memberCount}\nServer creation info: ${message.guild.createdAt}\nServer region: ${message.guild.region}`)
+      }
 });
