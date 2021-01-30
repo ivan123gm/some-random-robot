@@ -1,6 +1,6 @@
 {
   "name": "some-random-robot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bot, which i created for learning JavaScript.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,6 @@
   "dependencies": {
     "discord.js": "^12.5.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ivan123gm/some_random_robot.git"

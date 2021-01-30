@@ -20,19 +20,16 @@ client.once('ready', () => {
       if (command === "ping")
         {message.reply('pong!')
       }
-    
-      else if (command === "hello")
-        {message.reply('hello!')
+
+      else if (command === "help")
+        {message.channel.send (`**Prefix:** "." \n**Commands:** ping, help, serverinfo, userinfo`)
       }
 
-      else if (command === "bruh")
-        {message.reply('bruh')
-      }
-        
-      else if (command === "help")
-        {message.channel.send (`Prefix: "." \nCommands: ping, hello, bruh, help, serverinfo`)
-      }
       else if (command === "serverinfo")
-        {message.channel.send (`Server name: ${message.guild.name}\nAmount of members: ${message.guild.memberCount}\nServer creation info: ${message.guild.createdAt}\nServer region: ${message.guild.region}`)
+        {message.channel.send (`**Server name:** ${message.guild.name}\n**Amount of members:** ${message.guild.memberCount}\n**Server creation info:** ${message.guild.createdAt}\n**Server region:** ${message.guild.region}`)
       }
+
+      else if (command === `userinfo`)
+      {message.channel.send(`**Your username:** ${message.author.username}\n**Your ID:** ${message.author.id} `)}
+    
 });
