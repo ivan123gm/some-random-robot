@@ -1,7 +1,18 @@
 //storing all consts
+const fs = require('fs')
 const Discord = require('discord.js')
+const {prefix, token} = require('./config.json');
+const { fileURLToPath } = require('url');
+
 const client = new Discord.Client()
-const {prefix, token } = require('./config.json')
+client.commands = new Discord.Collection();
+
+const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+
+for (const file of commandFiles) {
+	const command = require(`./commands/${file}`);
+	client.commands.set(command.name, command);
+}
 //login with token in config.json
 client.login(token)
 
@@ -16,20 +27,14 @@ client.once('ready', () => {
 
     const args = message.content.slice(prefix.length).split(/ +/)
     const command = args.shift().toLowerCase()
-    
-      if (command === "ping")
-        {message.reply('pong!')
-      }
 
-      else if (command === "help")
-        {message.channel.send (`**Prefix:** "." \n**Commands:** ping, help, serverinfo, userinfo`)
-      }
+    if (!client.commands.has(command)) return;
 
-      else if (command === "serverinfo")
-        {message.channel.send (`**Server name:** ${message.guild.name}\n**Amount of members:** ${message.guild.memberCount}\n**Server creation info:** ${message.guild.createdAt}\n**Server region:** ${message.guild.region}`)
-      }
+    try {
+	client.commands.get(command).execute(message, args);
+    } catch (error) 
+	{console.error(error);
+	message.reply('something went wrong while executing this command!');
+}
 
-      else if (command === `userinfo`)
-      {message.channel.send(`**Your username:** ${message.author.username}\n**Your ID:** ${message.author.id} `)}
-    
 });
