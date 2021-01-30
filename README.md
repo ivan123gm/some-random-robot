@@ -10,5 +10,4 @@ Discord bot, which i created for learning JavaScript.
 6. Execute command "node ."
 
 # If you wanna redistribute this bot, then upload your own version of my bot on Github and replace these lines in package.json file, please.
-Note: while uploading your own version of this bot, do not upload node_modules folder.
 ![replace lines, which i highlighted in red.](/images/img1.png)
