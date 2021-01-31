@@ -1,5 +1,5 @@
 # SomeRandomRobot
-Discord bot, which i created for learning JavaScript.
+Discord bot, which i developing for learning JavaScript.
 
 Latest version of bot: 1.0.4
 
