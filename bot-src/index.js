@@ -27,7 +27,7 @@ client.once('ready', () => {
 
     const args = message.content.slice(prefix.length).split(/ +/)
     const command = args.shift().toLowerCase()
-
+//something like command handler
     if (!client.commands.has(command)) return;
 
     try {
