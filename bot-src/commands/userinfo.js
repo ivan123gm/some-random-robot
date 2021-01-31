@@ -1,3 +1,5 @@
+const { DiscordAPIError, Channel } = require("discord.js");
+
 module.exports = {
 	name: 'userinfo',
 	execute(message, args) {
